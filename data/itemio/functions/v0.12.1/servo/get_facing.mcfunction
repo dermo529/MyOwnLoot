@@ -10,4 +10,4 @@ execute if score #facing itemio.math matches 5 run data modify storage itemio:ma
 execute if data entity @s Item.tag.itemio.ioconfig.filters run data modify storage itemio:main entity.filters set from entity @s Item.tag.itemio.ioconfig.filters
 execute if data entity @s Item.tag.itemio.ioconfig.items run data modify storage itemio:main entity.items set from entity @s Item.tag.itemio.ioconfig.items
 scoreboard players operation #temp_stack_limit itemio.math = @s itemio.servo.stack_limit
-execute summon marker run function itemio:v0.12.1/servo/generate_destination
+execute summon marker at @s run function itemio:v0.12.1/servo/generate_destination
